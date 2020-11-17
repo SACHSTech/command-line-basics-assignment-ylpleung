@@ -1,1 +1,46 @@
-
+ pwd
+/home/runner/command-line-basics-assignment-ylpleung-1
+ mkdir LinuxExercise
+ pwd
+/home/runner/command-line-basics-assignment-ylpleung-1
+ ls
+LinuxExercise  README.md  TerminalSession.txt
+ cd LinuxExercise
+ pwd
+/home/runner/command-line-basics-assignment-ylpleung-1/LinuxExercise
+ touch myfile.txt
+ echo this is my new file >> myfile.txt
+ cat myfile.txt
+this is my new file
+ ls
+myfile.txt
+ cp myfile.txt myfile_copy.txt
+ ls
+myfile_copy.txt  myfile.txt
+ mv myfile_copy.txt myfile2.txt
+ ls
+myfile2.txt  myfile.txt
+ mv myfile2.txt ..
+ ls
+myfile.txt
+ cd ..
+ ls
+LinuxExercise  myfile2.txt  README.md  TerminalSession.txt
+ ls LinuxExercise
+myfile.txt
+ rm myfile.txt
+rm: cannot remove 'myfile.txt': No such file or directory
+ cd LinuxExercise
+ rm myfile.txt
+ cd ~
+ rm LinuxExercise
+rm: cannot remove 'LinuxExercise': No such file or directory
+ pwd
+/home/runner
+ cd command-line-basics-assignment-ylpleung-1
+ rm LinuxExercise
+rm: cannot remove 'LinuxExercise': Is a directory
+ rm -r LinuxExercise
+ cd ~
+ ls
+command-line-basics-assignment-ylpleung-1  jdt.ls-java-project  _test_runner.py
